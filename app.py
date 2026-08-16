@@ -49,11 +49,11 @@ DEFAULTS = {
     "mean fractal dimension": 0.063,
 }
 
-if "values" not in st.session_state:
-    st.session_state.values = DEFAULTS.copy()
+if "input_values" not in st.session_state:
+    st.session_state.input_values = DEFAULTS.copy()
 
 if st.button("🔄 Load Example Values"):
-    st.session_state.values = DEFAULTS.copy()
+    st.session_state.input_values = DEFAULTS.copy()
 
 # ---------------------------------------------------------
 # Input form
@@ -67,7 +67,7 @@ for i, feature in enumerate(feature_names):
     user_input[feature] = col.number_input(
         feature.title(),
         min_value=0.0,
-        value=float(st.session_state.values.get(feature, 0.0)),
+        value=float(st.session_state.input_values.get(feature, 0.0)),
         step=0.01,
         format="%.4f",
     )
