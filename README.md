@@ -6,7 +6,7 @@ trained earlier on the Breast Cancer Wisconsin dataset.
 
 ## 🔗 Live App
 
-**[Click here to try the live app](PASTE_YOUR_STREAMLIT_CLOUD_LINK_HERE)**
+**[Click here to try the live app](https://model-deployment-webapp-7n2rmuvn4fe2cg5lym2hco.streamlit.app/)**
 
 *(Replace the link above with your actual Streamlit Community Cloud URL after deploying — see steps below.)*
 
